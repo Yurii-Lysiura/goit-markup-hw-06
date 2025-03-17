@@ -191,6 +191,7 @@ img {
     letter-spacing: 0.02em;
   }
 }
+
 /* #endregion header */
 
 /* #region Mobile menu */
@@ -280,6 +281,7 @@ img {
   margin-bottom: 48px;
 }
 .mobile-menu-contacts-link {
+  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -320,6 +322,9 @@ img {
 }
 .mobile-icon {
   fill: #f4f4fd;
+}
+.blue-mobile {
+  color: #404bbf;
 }
 @media screen and (min-width: 768px) {
   .mobile-menu {
@@ -751,7 +756,6 @@ img {
   .portfolio-item {
     width: calc((100% - 24px) / 2);
     margin: 0 auto;
-    max-width: 356px;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 1157px) {
@@ -763,7 +767,6 @@ img {
   .portfolio-item {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
       0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-    max-width: 288px;
   }
 }
 
@@ -848,9 +851,9 @@ img {
   color: #f4f4fd;
   max-width: 288px;
   text-align: left;
-  margin-bottom: 72px;
 }
 .footer-logo-container {
+  margin-bottom: 72px;
   width: 288px;
 }
 .footer-social-container {
@@ -952,21 +955,14 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    padding: 0;
-  }
-
   .page-footer {
     max-width: 768px;
     background-color: #2e2f42;
     padding-top: 96px;
     padding-bottom: 96px;
-    padding-left: 108px;
   }
   .footer-main-container {
-    display: flex;
-    align-items: start;
-    justify-content: space-between;
+    width: 584px;
     text-align: left;
   }
 
@@ -974,12 +970,6 @@ img {
     max-width: 264px;
   }
 
-  .footer-logo-container {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    width: 264px;
-  }
   .footer-social-container {
     margin-left: 24px;
   }
@@ -1018,13 +1008,16 @@ img {
   .footer-main-container {
     display: flex;
     align-items: baseline;
+    width: 1440px;
   }
 
   .footer-logo-container {
     margin-right: 120px;
+    margin-bottom: 0;
     gap: 0;
   }
   .footer-social-container {
+    margin: 0;
   }
   .footer-subscribe {
     margin-left: auto;
